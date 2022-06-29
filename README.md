@@ -5,13 +5,15 @@ OnBoarding ,Login and Register Screens (Just Ui)
 
 ## Getting Started
 # onBoarding!
-![onBoarding]<img src="onBoarding.png" width="400" height="790">
+<img src="onBoarding.png" width="350" height="700">
 
 # Login!
-![Login](Login.png){:height="50%" width="50%"}
+<img src="Login.png" width="350" height="700">
+
 
 # Register!
-![Register](Register.png){:height="50%" width="50%"}
+<img src="Register.png" width="350" height="700">
+
 
 This project is a starting point for a Flutter application.
 

@@ -6,7 +6,7 @@ OnBoarding ,Login and Register Screens (Just Ui)
 ## Getting Started
 # onBoarding & Login & Register
 
-<img src="onBoarding.png" width="300" height="650"> | <img src="Login.png" width="300" height="650"> | <img src="Register.png" width="300" height="650">
+<img src="onBoarding.png" width="250" height="600"> | <img src="Login.png" width="250" height="600"> | <img src="Register.png" width="250" height="600">
 
 
 

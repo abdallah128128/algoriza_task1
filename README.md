@@ -4,15 +4,9 @@ Task 1 in Algoriza Flutter Intern.
 OnBoarding ,Login and Register Screens (Just Ui) 
 
 ## Getting Started
-# onBoarding!
-<img src="onBoarding.png" width="350" height="700">
+# onBoarding!  | # Login! | # Register!
+<img src="onBoarding.png" width="320" height="700"> | <img src="Login.png" width="320" height="700"> | <img src="Register.png" width="320" height="700">
 
-# Login!
-<img src="Login.png" width="350" height="700">
-
-
-# Register!
-<img src="Register.png" width="350" height="700">
 
 
 This project is a starting point for a Flutter application.

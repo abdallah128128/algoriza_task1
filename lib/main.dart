@@ -1,7 +1,4 @@
 import 'package:algoriza_task1/app_router.dart';
-import 'package:algoriza_task1/login_screen.dart';
-import 'package:algoriza_task1/on_boarding.dart';
-import 'package:algoriza_task1/register_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

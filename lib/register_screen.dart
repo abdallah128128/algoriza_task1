@@ -1,8 +1,8 @@
 import 'dart:ui';
 
-import 'package:algoriza_task1/login_screen.dart';
 import 'package:algoriza_task1/my_button.dart';
 import 'package:algoriza_task1/my_text_form_field.dart';
+import 'package:algoriza_task1/shared.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +40,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     child: const Image(
                       width: double.infinity,
                       image: AssetImage(
-                        'assets/images/333.jpg',
+                        'assets/images/teal.jpg',
                       ),
                       fit: BoxFit.cover,
                     ),
@@ -61,6 +61,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           child: Icon(
                             Icons.arrow_back_ios,
                             size: 26,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -78,7 +79,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          'Welcome to Fashion Daily',
+                          'Welcome to Food Delivery',
                           style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w600,
@@ -143,7 +144,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         //------------------------------------
                         MyButton(
                           buttonBorder: 5,
-                          buttonColor: Colors.blue,
+                          buttonColor: primaryColor,
                           text: 'Sign in',
                           onTap: () {},
                         ),
@@ -170,10 +171,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Text('Has any account? '),
-                            const SizedBox(
-                              width: 3,
-                            ),
+                            const Text('Has any account ? '),
                             InkWell(
                               onTap: () {
                                 Navigator.pushNamed(context, '/login');
@@ -182,7 +180,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 'Sign in here',
                                 style: TextStyle(
                                   fontSize: 15,
-                                  color: Colors.blue,
+                                  color: primaryColor,
                                 ),
                               ),
                             ),
@@ -204,7 +202,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             child: Text(
                               'terms and conditions',
                               style:
-                                  TextStyle(fontSize: 15, color: Colors.blue),
+                                  TextStyle(fontSize: 15, color: primaryColor),
                               textAlign: TextAlign.center,
                             ),
                           ),
@@ -238,7 +236,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           Text(
             'Help',
             style: TextStyle(
-              color: Colors.blue,
+              color: primaryColor,
               fontSize: 15.0,
             ),
           ),
@@ -246,7 +244,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             width: 3,
           ),
           CircleAvatar(
-            backgroundColor: Colors.blue,
+            backgroundColor: primaryColor,
             radius: 8,
             child: Icon(
               Icons.question_mark_sharp,
@@ -315,7 +313,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             borderRadius: BorderRadius.circular(5),
             border: Border.all(
               width: 1,
-              color: Colors.blue,
+              color: primaryColor,
             ),
           ),
           child: Row(
@@ -335,7 +333,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               Text(
                 'Sign with by google',
                 style: TextStyle(
-                  color: Colors.blue,
+                  color: primaryColor,
                   fontSize: 15.0,
                 ),
               ),

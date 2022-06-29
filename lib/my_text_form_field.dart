@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class MyTextFormField extends StatelessWidget {
@@ -13,6 +15,9 @@ class MyTextFormField extends StatelessWidget {
   final TextInputType keyboardType;
   final String validation;
   final Color? suffixColor;
+  final Color? cursorColor;
+  final Color focusedBorderColor;
+  final Color labelTextColor;
 
   MyTextFormField({
     Key? key,
@@ -28,6 +33,9 @@ class MyTextFormField extends StatelessWidget {
     this.isPassword = false,
     required this.validation,
     this.suffixColor,
+    this.cursorColor = Colors.grey,
+    this.focusedBorderColor=Colors.teal,
+    this.labelTextColor=Colors.grey,
   }) : super(key: key);
 
   @override
@@ -36,11 +44,20 @@ class MyTextFormField extends StatelessWidget {
       keyboardType: keyboardType,
       controller: controller,
       obscureText: isPassword,
+      cursorColor: cursorColor,
+
       style: const TextStyle(
         color: Colors.black,
       ),
       decoration: InputDecoration(
         border: const OutlineInputBorder(),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(0.0),
+          borderSide: BorderSide(
+            color: focusedBorderColor,
+          ),
+        ),
+
         suffixIcon: suffix != null
             ? IconButton(
                 onPressed: suffixPressed!,
@@ -53,6 +70,7 @@ class MyTextFormField extends StatelessWidget {
         prefixIcon: preFix,
         hintText: hintText,
         labelText: labelText,
+        labelStyle: TextStyle(color:labelTextColor,fontSize: 13),
         floatingLabelBehavior: FloatingLabelBehavior.auto,
       ),
       validator: (String? s) {

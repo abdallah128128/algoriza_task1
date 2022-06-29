@@ -1,6 +1,7 @@
 import 'dart:ui';
 import 'package:algoriza_task1/my_button.dart';
 import 'package:algoriza_task1/on_boarding_model.dart';
+import 'package:algoriza_task1/shared.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -67,7 +68,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
               style: TextStyle(
                 fontSize: 35,
                 fontWeight: FontWeight.bold,
-                color: Colors.teal,
+                color: primaryColor,
               ),
             ),
             Expanded(
@@ -129,7 +130,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w500,
-                      color: Colors.teal,
+                      color: primaryColor,
                     ),
                   ),
                 ),

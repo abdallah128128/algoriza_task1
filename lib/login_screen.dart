@@ -1,7 +1,6 @@
-import 'dart:ui';
-
 import 'package:algoriza_task1/my_button.dart';
 import 'package:algoriza_task1/my_text_form_field.dart';
+import 'package:algoriza_task1/shared.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +22,7 @@ class LoginScreen extends StatelessWidget {
                  width: double.infinity,
                  child: const Image(
                    image: AssetImage(
-                     'assets/images/333.jpg',
+                     'assets/images/teal.jpg',
                    ),
                    fit: BoxFit.cover,
                  ),
@@ -38,7 +37,7 @@ class LoginScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          'Welcome to Fashion Daily',
+                          'Welcome to Food Delivery',
                           style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.w600,
@@ -69,7 +68,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         MyButton(
                           buttonBorder: 5,
-                          buttonColor: Colors.blue,
+                          buttonColor: primaryColor,
                           text: 'Sign in',
                           onTap: () {},
                         ),
@@ -102,11 +101,11 @@ class LoginScreen extends StatelessWidget {
                               onTap: (){
                                 Navigator.pushNamed(context, '/register');
                               },
-                              child: const Text(
+                              child: Text(
                                 'Register here',
                                 style: TextStyle(
                                   fontSize: 15,
-                                  color: Colors.blue,
+                                  color: primaryColor,
                                 ),
                               ),
                             ),
@@ -151,7 +150,7 @@ class LoginScreen extends StatelessWidget {
       Text(
         'Help',
         style: TextStyle(
-          color: Colors.blue,
+          color: primaryColor,
           fontSize: 15.0,
         ),
       ),
@@ -159,7 +158,7 @@ class LoginScreen extends StatelessWidget {
         width: 3,
       ),
       CircleAvatar(
-        backgroundColor: Colors.blue,
+        backgroundColor: primaryColor,
         radius: 8,
         child: Icon(
           Icons.question_mark_sharp,
@@ -193,7 +192,7 @@ class LoginScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(5),
         border: Border.all(
           width: 1,
-          color: Colors.blue,
+          color: primaryColor,
         ),
       ),
       child: Row(
@@ -214,7 +213,7 @@ class LoginScreen extends StatelessWidget {
           Text(
             'Sign with by google',
             style: TextStyle(
-              color: Colors.blue,
+              color: primaryColor,
               fontSize: 15.0,
             ),
           ),

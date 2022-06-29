@@ -5,7 +5,7 @@ OnBoarding ,Login and Register Screens (Just Ui)
 
 ## Getting Started
 # onBoarding!
-![onBoarding](onBoarding.png){:height="50%" width="50%"}
+![onBoarding]<img src="onBoarding.png" width="400" height="790">
 
 # Login!
 ![Login](Login.png){:height="50%" width="50%"}

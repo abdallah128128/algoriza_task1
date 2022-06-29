@@ -5,8 +5,13 @@ OnBoarding ,Login and Register Screens (Just Ui)
 
 ## Getting Started
 # onBoarding!
-
 ![onBoarding](onBoarding.png)
+
+# Login!
+![Login](Login.png)
+
+# Register!
+![Register](Register.png)
 
 This project is a starting point for a Flutter application.
 
